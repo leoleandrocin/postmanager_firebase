@@ -1,0 +1,22 @@
+{
+  "functions": {
+    "source": "functions"
+  },
+  "hosting": {
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/postmanager/**",
+        "function": "main_functions"
+      }
+    ]
+  },
+  "storage": {
+    "rules": "storage.rules"
+  }
+}
